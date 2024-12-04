@@ -1,3 +1,29 @@
+/* --- Библиотека --- */
+
+:root {
+  --mine-chaft: #1F1F1F;
+  --base-color: #baef00;
+  --base-color-hover: #d9ff56;
+  --base-color-active: #a3d200;
+  --concrete: #F2F2F2;
+  --iron: #DFE1E5;
+  --transition: 0.3s;
+}
+
+/* --- База --- */
+
+html {
+  box-sizing: border-box;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Тело ---  */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,31 +33,44 @@ body {
   min-height: 100vh;
 }
 
+/* --- Шапка --- */
+
 header {
   padding: 10px;
   text-align: right;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.header__ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
-nav ul li {
+.header__li {
   display: inline;
   margin-left: 15px;
 }
 
-nav ul li a {
+.header__li a {
   text-decoration: none;
-  color: #000;
+  color: var(--mine-chaft);
   font-size: 13px;
 }
 
-.menu-icon, .profile-icon {
-  font-size: 20px;
-  vertical-align: middle;
+.header__li a:hover{
+  text-decoration: underline;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: outline var(--transition) ease;
+}
+
+.profile-pic:hover {
+  outline: 4px solid var(--iron);
 }
 
 main {
