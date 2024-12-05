@@ -13,29 +13,31 @@
         <nav class="header__nav">
             <ul class="header__ul list-reset">
                 <li class="header__li"><a href="">Images</a></li>
-                <li class="header__li"><a href=""><img src="./img/zura.webp" class="profile-pic" alt="Profile Picture"></a></li>
+                <li class="header__li"><a href=""><img src="/img/zura.webp" class="profile-pic" alt="Profile Picture"></a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="Google Logo">
+    <main class="main">
+        <div class="main__logo">
+            <img src="/img/logo.png" srcset="./img/logoX2.png 2x" alt="Google Logo">
         </div>
 
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Введите запрос">
-            <div class="search-icons">
-                <img src="https://www.gstatic.com/images/icons/material/system/1x/search_black_24dp.png"
-                    alt="Search Icon">
-                <img src="https://www.gstatic.com/images/icons/material/system/1x/mic_black_24dp.png" alt="Mic Icon">
-            </div>
-        </div>
+        <div class="main__searchbar">
+          <div class="main__search-icon">
+            <img class="main__search-icon-img" src="/img/icons/search.svg" alt="On-screen Keyboard">
+          </div>
+          <input type="text" id="search-input" placeholder="">
+          <div class="main__searchbar-icons">
+              <a href=""><img src="/img/icons/searchKeyboard.png" alt="On-screen Keyboard"></a>
+              <a href=""><img src="/img/icons/searchMic.svg" alt="Use Mic to Search"></a>
+              <a href=""><img src="/img/icons/searchPhoto.svg" alt="Use Photo to Search"></a>
+          </div>
+      </div>
 
-        <div class="buttons">
-            <button id="search-button">Поиск в Google</button>
-            <button id="lucky-button">Мне повезёт!</button>
+        <div class="main__buttons">
+            <button id="main__search-button">Google Search</button>
+            <button id="main__lucky-button">I'm Feeling Lucky</button>
         </div>
     </main>
     <footer>
