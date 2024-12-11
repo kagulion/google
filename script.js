@@ -70,6 +70,18 @@ searchButton.addEventListener("click", function () {
   }
 });
 
+// Обработчик для клавиши Enter
+searchInput.addEventListener('keydown', function (event) {
+  // Проверяем, была ли нажата клавиша Enter (код клавиши 13)
+  if (event.key === 'Enter') {
+      const query = searchInput.value;
+      if (query) {
+          // Перенаправляем на страницу Google с текущим запросом
+          window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      }
+  }
+});
+
 // Обработчик для кнопки "Мне повезёт!"
 luckyButton.addEventListener("click", function () {
   const query = searchInput.value;
@@ -98,3 +110,8 @@ function cyclePhrases() {
 
 // Пример: меняем фразу каждые 10 секунд (по желанию)
 setInterval(cyclePhrases, 10000);
+
+// Автоматически фокусируемся на поле ввода при загрузке страницы
+window.addEventListener('load', function () {
+  searchInput.focus();
+});
