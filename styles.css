@@ -33,6 +33,20 @@ img {
   margin: 0;
 }
 
+.button-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  line-height: inherit;
+  display: inline-block;
+}
+
 /* --- Тело ---  */
 
 body {
@@ -159,7 +173,7 @@ main {
 /* --- Футер --- */
 
 footer {
-  padding: 12px;
+  padding: 8px;
   font-size: 14px;
   color: var(--cape-code);
   background-color: var(--concrete);
